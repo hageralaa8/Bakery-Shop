@@ -1,0 +1,434 @@
+*
+
+/* universel selector *
+awl haga fe ay web site 
+  1  box sizing 
+  2( margin) =0
+  3(padding) =0
+ */
+  {
+  box-sizing: border-box;
+  /* (box-sizing= content + padding + border) */
+  margin: 0%;
+  /* (margin) property msh bttwrs */
+  padding: 0%;
+  /* (padding) property msh bttwrs */
+  /* (basfr el margin w el padding)3ashan fe element by defuclt b3rf mn (user agent stylesheet)= bashil kol elfar8at */
+}
+
+h3 {
+  font-family: "Alegreya", serif;
+}
+
+.clr {
+  clear: both;
+}
+
+/* start style navbar */
+div.navbar {
+  width: 100%;
+  /* 3ashan a3rf asager l masfat mn el ymen w shmal */
+  margin-inline: auto;
+  /*  hai2sem el mesa7a el fadia 3la el ymen w el shmal */
+  position: fixed;
+
+}
+.navbar-logo{
+  padding-left: 80px;
+}
+div.navbar div.navbar-logo div.navbar-img-logo img {
+  float: left;
+  width: 170px;
+  margin-top: 15px;
+}
+
+div.navbar div.navbar-links {
+
+  float: right;
+  font-size: 20px;
+  margin-top: 30px;
+  padding-right: 80px;
+
+}
+
+div.navbar div.navbar-links ul {
+  list-style: none;
+  /*  bashil el 3alama gambha */
+}
+
+div.navbar div.navbar-links ul li {
+  float: left;
+  padding-inline: 20px;
+  /* bb3dhom links 3n b3d 3l X */
+}
+
+div.navbar div.navbar-links ul a {
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  /*  lta8ir lon katbt el anchor */
+  /* 3ashn ashil el khat t7t el link */
+}
+
+/* end style nav bar */
+/* dark */
+.dark {
+  background-color: rgba(0, 0, 0, 0.344);
+  height: 100%;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* end background dark */
+
+/* HOME SECTION */
+div.Home {
+  background-image: url(./images/drew-coffman-1872.jpg);
+  background-size: cover;
+  /* (property Ll ta7kom fe ab3ad el sora) bt cover 7agm el section 3andy w lakn bt2os mn el sora m3 el7afaz 3la el (aspect raito) */
+  background-position: center;
+  height: 100vh;
+  /*(vh)view port height الجزء المرئي من الشاشه */
+  overflow: auto;
+  /*حل مشكلة (margin collapse) عشان احدد الحافه لان ال بروزر مش بيعرف يحدد  */
+  background-repeat: no-repeat;
+}
+
+div.Home div.home-section {
+  text-align: center;
+  margin-top: 50px;
+  /* (center)حل موقت انزلو من فوق لنص الشاشه */
+  color: white;
+}
+
+div.Home div.home-section h1 {
+  margin-block: 20px;
+  /*  (margin-block= bidy space mn top w bottom) */  
+    font-size: 58px;
+    line-height: 1.2em;
+}
+
+/* start style button */
+div.Home div.section-buttons{
+  margin-top: 30px;
+
+}
+
+div.Home div.section-buttons button {
+  padding: 15px 28;
+  /*  ll mas7at el da5lia 15(top-battom) 28(left raight) */
+  width: 130px;
+  /*  width 3ard el div */
+  height: 50px;
+  /* haight  tol el div*/
+  border-radius: 5px;
+  color: white;
+  font-weight: bolder;
+  /*  7agm elkhat */
+  cursor: pointer;
+  /*  shakl el maws lma ados 3l zroar */
+  transition: 0.3s;
+  margin-top: 30px;
+  text-transform: none;
+  letter-spacing: 0px;
+  font-size: 16px;
+  opacity: 1;
+  visibility: visible;
+}
+
+div.Home div.section-buttons button.Learn-more-button {
+  background-color: #8e7754;
+  border-color: transparent;
+}
+
+div.Home div.section-buttons button.contact-us-button {
+  background-color: transparent;
+  border: 2px solid white;
+
+}
+
+div.Home div.section-buttons button:hover {
+  background-color: white;
+  color: black;
+  /* border-color: #fff; */
+}
+
+/* end style button */
+/* Home section2 */
+div.Home-2 {
+  padding: 50px;
+  text-align: start;
+  margin-left: 30px;
+}
+
+div.Home-2 div.home-img {
+  display: inline-block;
+  width: 40%;
+
+}
+
+div.Home-2 div.home-img img {
+  width: 100%;
+  height: 500px;
+}
+
+div.Home-2 div.home-content {
+  display: inline-block;
+  width: 600px;
+  padding-left: 100px;
+  vertical-align: top;
+
+}
+
+div.Home-2 div.home-content h2 {
+  text-align: start;
+  margin-bottom: 30px;
+}
+
+.icon-list-container {
+  text-align: center;
+  display: inline-block;
+  margin-top: 40px;
+
+}
+
+.icon-list-container img {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 0%;
+}
+
+ul.icon-list {
+  list-style-type: none;
+  margin-left: 0%;
+  padding-left: 0%;
+  text-align: start;
+}
+
+li.icon-list-item {
+  margin-block: 30px;
+
+}
+
+ul.icon-list p {
+  display: inline-block;
+  vertical-align: sub;
+  /*   btst5dm m3 display inline block t center el kalam fe el middel */
+}
+
+/*style  div our location */
+.our-location-container {
+  /* height: 600px; */
+  background-color: rgb(244, 243, 243);
+}
+
+.our-location-image {
+  display: inline-block;
+  margin-left: 40px;
+  /*  msafa mn el shmal */
+
+
+}
+
+.our-location-content h2 {
+  margin: 15px;
+}
+
+.our-location-content {
+  display: inline-block;
+  width: 600px;
+  padding-left: 100px;
+  margin-top: 100px;
+  vertical-align: top;
+}
+
+.our-location-image img {
+  margin-top: 80px;
+  width: 500px;
+  height: 400px;
+}
+
+/* end style div our location */
+
+/* start style our baking */
+.our-baking-container {
+  text-align: center;
+}
+
+.our-baking-hrader {
+  margin: 40px;
+
+}
+
+.our-baking-content {
+  float: left;
+  width: 33%;
+  padding: 30px;
+}
+
+.our-baking-content img {
+  width: 340px;
+  height: 300px;
+}
+
+.our-baking-container p {
+  margin: 30px;
+}
+
+.our-baking-container h3 {
+  margin: 30px;
+}
+
+/* stary style our contact information */
+.our-contact {
+  padding: 65px 60px 60px 90px;
+  background-color: rgb(242, 242, 242);
+}
+
+.blog-cap {
+  width: 30%;
+  display: inline-block;
+  vertical-align: top;
+  line-height: 1.5;
+}
+
+.blog-map {
+  display: inline-block;
+  margin-left: 15%;
+}
+
+.map {
+  width: 500px;
+  height: 500px;
+  border: 0;
+  opacity: 0.7;
+}
+
+.blog-cap p {
+  color: gray;
+}
+
+.ul-list1 {
+  list-style-type: none;
+  padding: 0px;
+  color: gray;
+}
+
+.about-list img {
+  width: 40px;
+  border: solid 1.5px rgb(201, 200, 200);
+  border-radius: 100%;
+  margin: 7px 0px 7px 0px;
+  background-color: #8e7754;
+}
+
+.lists1 {
+  vertical-align: middle;
+}
+
+/* end style our contact information */
+
+/* start style footer section */
+.footer {
+  padding: 40px;
+  width: 100%;
+  background-color: #413f3a;
+  height: 500px;
+  overflow: auto;
+}
+
+.ending {
+  background-color: #302c27;
+  height: 300px;
+  text-align: center;
+  overflow: auto;
+}
+
+.footer-image {
+  margin: 30px;
+}
+
+.footer-item {
+  float: left;
+  width: 25%;
+  height: 100%;
+  padding: 30px;
+}
+
+.footer-item p {
+  color: #969696;
+  font-size: 15px;
+}
+
+.footer-item h4 {
+  color: white;
+  font-weight: 700;
+  font-size: 17px;
+  padding: 30px;
+}
+
+.footer-list-item ul li {
+  border-bottom: 1px solid #969696;
+  font-size: 15px;
+  padding-bottom: 15px;
+  color: #969696;
+  margin-bottom: 12px;
+}
+
+.footer-list-item ul {
+  list-style-type: none;
+}
+
+.footer-ending-content p {
+  color: #969696;
+  padding: 15px;
+}
+
+.social {
+  padding: 4px;
+  display: inline-block;
+  vertical-align: middle;
+  cursor: pointer;
+}
+
+.icon-facebook:hover img {
+  background-color: #3b5998;
+}
+
+.icon-google-plus:hover img {
+  background-color: #dd4b39;
+}
+
+;
+
+.icon-linkedin:hover img {
+  background: #007bb5;
+}
+
+.icon-twitter:hover img {
+  background-color: #00aced;
+}
+
+.social img {
+  width: 42px;
+  height: 42px;
+  border-radius: 50%;
+  border: 1px solid #969696;
+  margin-left: 0px;
+}
+
+.footer-icons {
+  text-align: center;
+}
+
+.icone img {
+  width: 20px;
+
+}
+
+/* end style ending section */
